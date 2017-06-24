@@ -803,7 +803,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   .mbr-table-md-up .mbr-table-cell {
     display: block; }
   .mbr-table-md-up .mbr-table-cell + .mbr-table-cell {
-    padding-top: 40px; }
+    padding-top: 0px; }
 
 @media (min-width: 769px) {
   .mbr-table-md-up {
@@ -812,6 +812,24 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
       display: table-cell; }
     .mbr-table-md-up .mbr-table-cell + .mbr-table-cell {
       padding-top: 0; } }
+
+.mbr-table-md-up-vd {
+  width: 100%; }
+  .mbr-table-md-up-vd .mbr-table-cell {
+    display: block; }
+  .mbr-table-md-up-vd .mbr-table-cell + .mbr-table-cell {
+    padding-top: 0px; }
+
+
+@media (min-width: 769px) {
+  .mbr-table-md-up-vd {
+    display: table; }
+    .mbr-table-md-up-vd .mbr-table-cell {
+      display: table-cell; }
+    .mbr-table-md-up-vd .mbr-table-cell + .mbr-table-cell {
+      padding-top: 0; } }
+
+
 .mbr-figure {
   display: block;
   margin: 0;
@@ -836,6 +854,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
     background: linear-gradient(left, rgba(67, 76, 99, 0.85), rgba(188, 155, 114, 0.85)) !important;
     bottom: 0;
     position: absolute; }
+
 
 .mbr-map {
   height: 25rem;
