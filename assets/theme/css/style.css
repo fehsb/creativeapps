@@ -502,7 +502,7 @@ p.lead,
   margin-top: 3.9rem; }
 
 .display-2 {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 600;
   letter-spacing: -1px;
   margin-bottom: 1.5625rem;
@@ -593,7 +593,7 @@ body {
   color: #232323; }
 
 h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6,
+.h1, .h2, .h3, .mbr-section-title display-2h4, .h5, .h6,
 .display-1, .display-2, .display-3, .display-4 {
   font-family: 'Montserrat', sans-serif;
   word-break: break-word;

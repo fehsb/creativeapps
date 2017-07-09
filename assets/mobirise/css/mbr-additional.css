@@ -740,13 +740,26 @@ h6,
   font-weight: bold !important;
 }
 #header2-1 .mbr-section-title {
-  font-size: 84px;
+  font-size: 70px;
 }
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
   #header2-1 .mbr-section-title {
-    font-size: 50px;
+    font-size: 45px;
   }
 }
+
+#header2-1 .mbr-section-title1 {
+  font-size: 22px;
+}
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  #header2-1 .mbr-section-title1 {
+    font-size: 22px;
+  }
+}
+
+
+
+
 #header3-k .mbr-section-title,
 #header3-k .mbr-section-subtitle {
   text-align: center;
