@@ -17,11 +17,11 @@ try {
      $mail->Username = 'meajuda@creativeapps.com.br'; // Usuário do servidor SMTP (endereço de email)
      $mail->Password = '20011995'; // Senha do servidor SMTP (senha do email usado)
      $mail->SMTPSecure = 'ssl';  // SSL REQUERIDO pelo GMail
-     $mail->isSMTP(); 
+     $mail->isSMTP();
      //Define o remetente
      // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-     $mail->SetFrom($_POST["email"], 'Nome'); //Seu e-mail
-     $mail->AddReplyTo($_POST["email"], 'Nome'); //Seu e-mail
+     $mail->SetFrom('meajuda@creativeapps.com.br' 'Nome'); //Seu e-mail
+     $mail->AddReplyTo('meajuda@creativeapps.com.br', 'Nome'); //Seu e-mail
      $mail->Subject = 'Assunto'; //Assunto do e-mail
      echo $_POST["email"];
 
@@ -31,7 +31,7 @@ try {
 
      //Campos abaixo são opcionais
      //=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-     //$mail->AddCC('destinarario@dominio.com.br', 'Destinatario'); // Copia
+     $mail->AddCC($_POST['email'], 'Destinatario'); // Copia
      //$mail->AddBCC('destinatario_oculto@dominio.com.br', 'Destinatario2`'); // Cópia Oculta
      //$mail->AddAttachment('images/phpmailer.gif');      // Adicionar um anexo
 
