@@ -17,7 +17,7 @@ try {
      $mail->Username = 'meajuda@creativeapps.com.br'; // Usuário do servidor SMTP (endereço de email)
      $mail->Password = '20011995'; // Senha do servidor SMTP (senha do email usado)
      $mail->SMTPSecure = 'ssl';  // SSL REQUERIDO pelo GMail
-
+     $mail->isSMTP(); 
      //Define o remetente
      // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
      $mail->SetFrom($_POST["email"], 'Nome'); //Seu e-mail
