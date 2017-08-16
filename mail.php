@@ -27,7 +27,7 @@ try {
 
      //Define os destinatário(s)
      //=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-     $mail->AddAddress('meajuda@creativeapps.com.br', 'Teste Locaweb');
+     $mail->AddAddress('brunofaganello@creativeapps.com.br', 'Teste Locaweb');
 
      //Campos abaixo são opcionais
      //=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
