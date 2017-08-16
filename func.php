@@ -64,7 +64,11 @@ function ip_info($ip = NULL, $purpose = "location", $deep_detect = TRUE) {
     return $output;
 }
 
-echo ip_info("Visitor", "Country Code"); // IN
+$country = ip_info("Visitor", "Country Code"); // IN
+
+if ( strcasecmp( $country, 'BR' ) == 0 ){
+      echo 'You successfully logged in.';
+}
 
 
 ?>
