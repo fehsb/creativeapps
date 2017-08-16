@@ -201,14 +201,14 @@ else {
   <div class="container">
     <div class="col-md-8 col-md-offset-2 text-center">
       <h3>Procurando melhorar sua empresa? Entre em contato</h3>
-      <form class="cf">
+      <form  action="mail.php" method="post" class="cf">
           <div class="half left cf">
-            <input type="text" id="input-name" placeholder="Name">
-            <input type="email" id="input-email" placeholder="Email address">
-            <input type="text" id="input-subject" placeholder="Subject">
+            <input type="text" id="input-name" placeholder="Name" name="name">
+            <input type="email" id="input-email" placeholder="Email address" name="email">
+            <input type="text" id="input-subject" placeholder="Subject" name="subject">
           </div>
           <div class="half right cf">
-            <textarea name="message" type="text" id="input-message" placeholder="Message"></textarea>
+            <textarea name="message" type="text" id="input-message" placeholder="Message" name="message"></textarea>
           </div>
           <input type="submit" value="Submit" id="input-submit">
       </form>
