@@ -19,7 +19,7 @@ $mail->Password = "20011995";
 //If SMTP requires TLS encryption then set it
 $mail->SMTPSecure = "ssl";
 //Set TCP port to connect to
-$mail->Port = 465;
+$mail->Port = 587;
 
 $mail->From = "helpmail@creativeapps.com.br";
 $mail->FromName = "Full Name";
