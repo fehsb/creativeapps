@@ -13,7 +13,7 @@ $mail->IsSMTP(); // Define que a mensagem será SMTP
 try {
      $mail->Host = 'smtp.creativeapps.com.br'; // Endereço do servidor SMTP (Autenticação, utilize o host smtp.seudomínio.com.br)
      $mail->SMTPAuth   = true;  // Usar autenticação SMTP (obrigatório para smtp.seudomínio.com.br)
-     $mail->Port       = 587; //  Usar 587 porta SMTP
+     $mail->Port       = 465; //  Usar 587 porta SMTP
      $mail->Username = 'meajuda@creativeapps.com.br'; // Usuário do servidor SMTP (endereço de email)
      $mail->Password = '20011995'; // Senha do servidor SMTP (senha do email usado)
      $mail->SMTPSecure = 'ssl';  // SSL REQUERIDO pelo GMail
