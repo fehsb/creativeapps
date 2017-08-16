@@ -67,7 +67,11 @@ function ip_info($ip = NULL, $purpose = "location", $deep_detect = TRUE) {
 $country = ip_info("Visitor", "Country Code"); // IN
 
 if ( strcasecmp( $country, 'BR' ) == 0 ){
-      echo 'You successfully logged in.';
+  header("Location: http://uol.com.br");
+  die();
+}
+else {
+
 }
 
 
