@@ -31,7 +31,7 @@ try {
 
      //Campos abaixo são opcionais
      //=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-     $mail->AddCC($_POST['email'], 'Destinatario'); // Copia
+     //$mail->AddCC($_POST['email'], 'Destinatario'); // Copia
      //$mail->AddBCC('destinatario_oculto@dominio.com.br', 'Destinatario2`'); // Cópia Oculta
      //$mail->AddAttachment('images/phpmailer.gif');      // Adicionar um anexo
 
