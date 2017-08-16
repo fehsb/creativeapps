@@ -11,6 +11,7 @@ $mail = new PHPMailer(true);
 $mail->IsSMTP(); // Define que a mensagem será SMTP
 
 try {
+    echo $_POST['email'];
      $mail->Host = 'mx1.hostinger.com.br'; // Endereço do servidor SMTP (Autenticação, utilize o host smtp.seudomínio.com.br)
      $mail->SMTPAuth   = true;  // Usar autenticação SMTP (obrigatório para smtp.seudomínio.com.br)
      $mail->Port       = 465; //  Usar 587 porta SMTP
@@ -24,7 +25,7 @@ try {
      $mail->SetFrom('helpmail@creativeapps.com.br' 'Nome'); //Seu e-mail
      $mail->AddReplyTo('meajuda@creativeapps.com.br', 'Nome'); //Seu e-mail
      $mail->Subject = 'Assunto'; //Assunto do e-mail
-     echo $_POST["email"];
+     echo $_POST['email'];
 
      //Define os destinatário(s)
      //=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
