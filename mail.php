@@ -17,7 +17,7 @@ $mail->SMTPAuth = true;
 $mail->Username = "helpmail@creativeapps.com.br";
 $mail->Password = "20011995";
 //If SMTP requires TLS encryption then set it
-$mail->SMTPSecure = "tls";
+$mail->SMTPSecure = "ssl";
 //Set TCP port to connect to
 $mail->Port = 465;
 
