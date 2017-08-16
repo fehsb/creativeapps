@@ -23,7 +23,7 @@ try {
      $mail->SetFrom($_POST["email"], 'Nome'); //Seu e-mail
      $mail->AddReplyTo($_POST["email"], 'Nome'); //Seu e-mail
      $mail->Subject = 'Assunto'; //Assunto do e-mail
-
+     echo $_POST["email"];
 
      //Define os destinatário(s)
      //=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
