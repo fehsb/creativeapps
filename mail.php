@@ -8,7 +8,7 @@ $mail = new PHPMailer;
 //Enable SMTP debugging.
 $mail->SMTPDebug = 3;
 //Set PHPMailer to use SMTP.
-$mail->isSMTP();
+$mail->IsSMTP(); 
 //Set SMTP host name
 $mail->Host = "mx1.hostinger.com.br";
 //Set this to true if SMTP host requires authentication to send email
@@ -19,7 +19,7 @@ $mail->Password = "20011995";
 //If SMTP requires TLS encryption then set it
 $mail->SMTPSecure = "ssl";
 //Set TCP port to connect to
-$mail->Port = 587;
+$mail->Port = 465;
 
 $mail->From = "helpmail@creativeapps.com.br";
 $mail->FromName = "Full Name";
