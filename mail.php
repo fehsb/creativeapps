@@ -14,20 +14,21 @@ try {
      $mail->Host = 'mx1.hostinger.com.br'; // Endereço do servidor SMTP (Autenticação, utilize o host smtp.seudomínio.com.br)
      $mail->SMTPAuth   = true;  // Usar autenticação SMTP (obrigatório para smtp.seudomínio.com.br)
      $mail->Port       = 465; //  Usar 587 porta SMTP
-     $mail->Username = 'meajuda@creativeapps.com.br'; // Usuário do servidor SMTP (endereço de email)
+     $mail->Username = 'helpmail@creativeapps.com.br'; // Usuário do servidor SMTP (endereço de email)
      $mail->Password = '20011995'; // Senha do servidor SMTP (senha do email usado)
      $mail->SMTPSecure = 'ssl';  // SSL REQUERIDO pelo GMail
      $mail->isSMTP();
+
      //Define o remetente
      // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-     $mail->SetFrom('meajuda@creativeapps.com.br' 'Nome'); //Seu e-mail
+     $mail->SetFrom('helpmail@creativeapps.com.br' 'Nome'); //Seu e-mail
      $mail->AddReplyTo('meajuda@creativeapps.com.br', 'Nome'); //Seu e-mail
      $mail->Subject = 'Assunto'; //Assunto do e-mail
      echo $_POST["email"];
 
      //Define os destinatário(s)
      //=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-     $mail->AddAddress('meajuda@creativeapps.com.br', 'Teste Locaweb');
+     $mail->AddAddress($_POST['email'], 'Teste Locaweb');
 
      //Campos abaixo são opcionais
      //=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
