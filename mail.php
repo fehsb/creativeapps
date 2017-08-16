@@ -21,7 +21,7 @@ try {
      //Define o remetente
      // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
      $mail->SetFrom($_POST["email"], 'Nome'); //Seu e-mail
-     $mail->AddReplyTo('meajuda@creativeapps.com.br', 'Nome'); //Seu e-mail
+     $mail->AddReplyTo($_POST["email"], 'Nome'); //Seu e-mail
      $mail->Subject = 'Assunto'; //Assunto do e-mail
 
 
