@@ -1,4 +1,4 @@
-<!--<?php
+<?php
 function ip_info($ip = NULL, $purpose = "location", $deep_detect = TRUE) {
     $output = NULL;
     if (filter_var($ip, FILTER_VALIDATE_IP) === FALSE) {
@@ -74,7 +74,7 @@ else {
   die();
 }
 ?>
--->
+
 
 <!doctype html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
@@ -203,12 +203,12 @@ else {
       <h3>Procurando melhorar sua empresa? Entre em contato</h3>
       <form  action="mail.php" method="post" class="cf">
           <div class="half left cf">
-            <input type="text" id="input-name" placeholder="Name" name="name" required>
+            <input type="text" id="input-name" placeholder="Nome" name="name" required>
             <input type="email" id="input-email" placeholder="Email address" name="email" required>
-            <input type="text" id="input-subject" placeholder="Subject" name="subject" required>
+            <input type="text" id="input-subject" placeholder="Assunto" name="subject" required>
           </div>
           <div class="half right cf">
-            <textarea name="message" type="text" id="input-message" placeholder="Message" name="message" required></textarea>
+            <textarea name="message" type="text" id="input-message" placeholder="Mensagem" name="message" required></textarea>
           </div>
           <input type="submit" value="Submit" id="input-submit">
       </form>
