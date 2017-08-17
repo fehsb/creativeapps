@@ -9,6 +9,8 @@ $mail = new PHPMailer;
 $mail->SMTPDebug = 3;
 //Set PHPMailer to use SMTP.
 $mail->IsSMTP();
+
+$mail->CharSet = 'UTF-8';
 //Set SMTP host name
 $mail->Host = "mx1.hostinger.com.br";
 //Set this to true if SMTP host requires authentication to send email
@@ -38,9 +40,11 @@ if(!$mail->send())
 }
 else
 {
+
     echo "Message has been sent successfully";
 }
-
+header("Location: http://creativeapps.com.br");
+die();
 
 
 ?>
