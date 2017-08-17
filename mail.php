@@ -8,7 +8,7 @@ $mail = new PHPMailer;
 //Enable SMTP debugging.
 $mail->SMTPDebug = 3;
 //Set PHPMailer to use SMTP.
-$mail->IsSMTP(); 
+$mail->IsSMTP();
 //Set SMTP host name
 $mail->Host = "mx1.hostinger.com.br";
 //Set this to true if SMTP host requires authentication to send email
@@ -23,8 +23,8 @@ $mail->Port = 465;
 
 $mail->From = "helpmail@creativeapps.com.br";
 $mail->FromName = "Full Name";
-
-$mail->addAddress($_POST["email"], "Recepient Name");
+$mail->AddReplyTo($_POST["email"], $_POST["name"]); //Seu e-mail
+$mail->addAddress("meajuda@creativeapps.com.br", "Me Ajuda");
 
 $mail->isHTML(false);
 
