@@ -22,15 +22,15 @@ $mail->SMTPSecure = "ssl";
 $mail->Port = 465;
 
 $mail->From = "helpmail@creativeapps.com.br";
-$mail->FromName = "Full Name";
+$mail->FromName = $_POST["name"];
 $mail->AddReplyTo($_POST["email"], $_POST["name"]); //Seu e-mail
 $mail->addAddress("meajuda@creativeapps.com.br", "Me Ajuda");
 
 $mail->isHTML(false);
 
-$mail->Subject = "Subject Text";
-$mail->Body = "Mail body in HTML";
-$mail->AltBody = "This is the plain text version of the email content";
+$mail->Subject = $_POST["subject"];
+$mail->Body = $_POST["message"];
+
 
 if(!$mail->send())
 {
