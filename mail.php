@@ -64,16 +64,9 @@ $mail->isHTML(false);
 $mail->Subject = $_POST["subject"];
 $mail->Body = $_POST["message"];
 
+$mail->send();
+sendFeedBackMessage();
 
-if(!$mail->send())
-{
-    echo "Mailer Error: " . $mail->ErrorInfo;
-}
-else
-{
-    sendFeedBackMessage();
-    echo "Message has been sent successfully";
-}
 header("Location: http://creativeapps.com.br");
 die();
 
