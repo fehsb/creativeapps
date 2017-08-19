@@ -1,18 +1,16 @@
-
-
-
 <!doctype html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
 <!--[if gt IE 8]><!-->
-<html class="no-js" lang="">
+<html class="no-js" lang="pt">
 <!--<![endif]-->
 <head>
+<title>Creative Apps</title>
 <meta charset="utf-8">
 <meta name="description" content="">
+<meta name="keywords" content="software, mobile, portfolio, creativa,android, ios,clean, app, desenvolvimento, programas">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Creative Apps</title>
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/flexslider.css">
 <link rel="stylesheet" href="css/jquery.fancybox.css">
@@ -21,6 +19,16 @@
 <link rel="stylesheet" href="css/animate.min.css">
 <link rel="stylesheet" href="css/font-icon.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<!-- FACEBOOK TAGS -->
+<meta property="og:locale" content="pt">
+<meta property="og:url" content="http://www.creativeapps.com.br">
+<meta property="og:title" content="Seja Creative">
+<meta property="og:site_name" content="Creative Apps">
+<meta property="og:description" content="O tutorial para compartilhar o conteúdo do seu site de forma eficaz.">
+<meta property="og:type" content="website">
+
+<!-- END FACEBOOK TAGS -->
+
 </head>
 
 <body>
@@ -31,8 +39,8 @@
     <div class="header-content clearfix"> <a class="logo" href="#top"><img src="images/logo.png" alt=""></a>
       <nav class="navigation" role="navigation">
         <ul class="primary-nav">
-          <li><a href="#intro">O que é ser Creative?</a></li>
-          <li><a href="#services">Por que ser Creative?</a></li>
+          <li><a href="#intro">What is Creative?</a></li>
+          <li><a href="#services">Why be Creative?</a></li>
           <li><a href="#contact">Be Creative</a></li>
         </ul>
       </nav>
@@ -44,8 +52,8 @@
     <div class="col-md-10 col-md-offset-1">
       <div class="banner-text text-center">
         <h1><b>C</b>REATIVE</h1>
-        <p>Agência Digital</p>
-        <nav role="navigation"> <a href="#intro" class="btn btn-large">Descubra</a> </div></nav>
+        <p>Digital Agency</p>
+        <nav role="navigation"> <a href="#intro" class="btn btn-large">Find Out</a> </div></nav>
       </div>
       <!-- banner text -->
     </div>
@@ -64,11 +72,9 @@
             </div>
             <div class="col-md-6">
               <blockquote>
-                <h1>O que é ser <b>C</b>reative?</h1>
-                <h3>A mudança é certa</h3>
-                <p>O mundo está em uma constante transformação, a forma como pessoas interagem.
-                  Dessa forma pensamos em soluções que coloque seus cliente em primeiro lugar em qualquer lugar. </p>
-                  <p>Nós da Creative, entendemos que a única certeza no mundo é a mudança. Por isso impulsionamos empresas rumo à transformação de seus produtos e serviços na era digital.</p>
+                <h3>The change is right</h3>
+                <p>The world is in a constant transformation, the way people interact. That way we think of solutions that put your customer first anywhere.</p>
+                  <p>We at Creative, understand that the only certainty in the world is change. That is why we are pushing companies towards the transformation of their products and services into the digital era.</p>
               </blockquote>
             </div>
           </li>
@@ -82,7 +88,7 @@
 <!-- services section -->
 <section id="services" class="services service-section">
   <div class="col-md-8 col-md-offset-2 text-center">
-    <h1>Por que ser Creative?</h1>
+    <h2>Why be Creative?</h2>
     <br>
     <br>
   </div>
@@ -91,19 +97,19 @@
     <div class="row">
       <div class="col-md-4 col-sm-6 services"> <span class="icon icon-briefcase"></span>
         <div class="services-content">
-          <h4>Criação de Identidade</h4>
+          <h4>Brand Identity</h4>
           <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p>
         </div>
       </div>
       <div class="col-md-4 col-sm-6 services"> <span class="icon icon-tools"></span>
         <div class="services-content">
-          <h4>Design e Desenvolvimento</h4>
+          <h4>Design & Development</h4>
           <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p>
         </div>
       </div>
       <div class="col-md-4 col-sm-6 services"> <span class="icon icon-megaphone"></span>
         <div class="services-content">
-          <h4>Marketing Digital</h4>
+          <h4>Digital Marketing</h4>
           <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p>
         </div>
       </div>
@@ -115,9 +121,19 @@
 <section id="contact" class="section quote">
   <div class="container">
     <div class="col-md-8 col-md-offset-2 text-center">
-      <h3>Looking for a new brand? Let's work together!</h3>
-      <a href="#" class="btn btn-large">Get Quotation</a> </div>
-  </div>
+      <h3>Looking for the Best? Chat with us!</h3>
+      <form  action="mail.php" method="post" class="cf">
+          <div class="half left cf">
+            <input type="text" id="input-name" placeholder="Name" name="name" required>
+            <input type="email" id="input-email" placeholder="Email" name="email" required>
+            <input type="text" id="input-subject" placeholder="Subject" name="subject" required>
+          </div>
+          <div class="half right cf">
+            <textarea name="message" type="text" id="input-message" placeholder="message" name="message" required></textarea>
+          </div>
+          <input type="submit" value="Submit" id="input-submit">
+      </form>
+    </div>
 </section>
 <!-- Get a quote section -->
 <!-- Footer section -->
@@ -126,30 +142,40 @@
     <div class="container">
       <div class="row">
         <div class="footer-col col-md-6">
-          <h5>Estamos pelo Mundo</h5>
-          <p>São Paulo/SP.<br>
+          <h5>We are around the world</h5>
+          <p>Brazil<br>
             comunicacao@creativeapps.com.br</p>
           <p>Copyright © 2017 Creative Apps. All Rights Reserved.</p>
         </div>
         <div class="footer-col col-md-3">
-          <h5>Services We Offer</h5>
+          <h5>Our Service</h5>
           <p>
           <ul>
-            <li><a href="#">Marketing Digital</a></li>
-            <li><a href="#">Websites</a></li>
-            <li><a href="#">Videography</a></li>
-            <li><a href="#">Social Media</a></li>
-            <li><a href="#">User Experience</a></li>
+            <li><a href="#">Digital Marketing</a></li>
+            <li><a href="#">Brand Identity</a></li>
+            <li><a href="#">Mobile Development</a></li>
+            <li><a href="#">Web Development</a></li>
+            <li><a href="#">Chat Bot</a></li>
           </ul>
           </p>
         </div>
         <div class="footer-col col-md-3">
-          <h5>Share with Love</h5>
+          <h5>Share with US</h5>
           <ul class="footer-share">
-            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="https://www.facebook.com/creativeappss/"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://www.instagram.com/creativeapps_/"><i class="fa fa-instagram"></i></a></li>
+          </ul>
+        </div>
+        <div class="footer-col col-md-3">
+          <h5>I live in Brazil</h5>
+          <ul class="footer-share">
+            <li><a href="http://creativeapps.com.br">
+                  <img src="images/brazil.png"style="width:35px;height:23px;border:0;">
+            </a></li>
+
+            <li><a href="http://creativeapps.com.br/US/index.html">
+                  <img src="images/usa.png"style="width:38px;height:38px;border:0;">
+            </a></li>
           </ul>
         </div>
       </div>

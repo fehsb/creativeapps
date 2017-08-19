@@ -67,7 +67,7 @@ function ip_info($ip = NULL, $purpose = "location", $deep_detect = TRUE) {
 $country = ip_info("Visitor", "Country Code"); // IN
 
 if ( strcasecmp( $country, 'BR' ) == 0 ){
-  
+
 }
 else {
   header("Location: http://creativeapps.com.br/US/index.php");
@@ -246,10 +246,15 @@ else {
           </ul>
         </div>
         <div class="footer-col col-md-3">
-          <h5>Compartilhe</h5>
+          <h5>I live out Brazil</h5>
           <ul class="footer-share">
-            <li><a href="#"><i class="fa fa-brasil"></i></a></li>
-            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="http://creativeapps.com.br">
+                  <img src="images/brazil.png"style="width:35px;height:23px;border:0;">
+            </a></li>
+
+            <li><a href="http://creativeapps.com.br/US/index.html">
+                  <img src="images/usa.png"style="width:38px;height:38px;border:0;">
+            </a></li>
           </ul>
         </div>
       </div>
