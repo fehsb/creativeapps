@@ -23,7 +23,7 @@ function sendFeedBackMessage() {
   $m->Port = 465;
 
   $m->From = "helpmail@creativeapps.com.br";
-  $m->FromName = "Help me - Creative - Not Reply";
+  $m->FromName = "Help me - Creative";
   $m->AddReplyTo("meajuda@creativeapps.com.br", "MeAjuda - Creative"); //Seu e-mail
   $m->addAddress($_POST["email"], $_POST["name"]);
   $m->isHTML(false);
@@ -67,11 +67,7 @@ $mail->Body = $_POST["message"];
 $mail->send();
 sendFeedBackMessage();
 
-header("Location: http://creativeapps.com.br");
+header("Location: http://creativeapps.com.br/US/index.html");
 die();
-
-
-
-
 
 ?>

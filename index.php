@@ -210,7 +210,7 @@ else {
           <div class="half right cf">
             <textarea name="message" type="text" id="input-message" placeholder="Mensagem" name="message" required></textarea>
           </div>
-          <input type="submit" value="Submit" id="input-submit">
+          <input type="submit" value="Enviar" id="input-submit">
       </form>
     </div>
 </section>
@@ -241,8 +241,8 @@ else {
         <div class="footer-col col-md-3">
           <h5>Compartilhe</h5>
           <ul class="footer-share">
-            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="https://www.facebook.com/creativeappss/"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://www.instagram.com/creativeapps_/"><i class="fa fa-instagram"></i></a></li>
           </ul>
         </div>
         <div class="footer-col col-md-3">
