@@ -66,7 +66,7 @@ function ip_info($ip = NULL, $purpose = "location", $deep_detect = TRUE) {
 
 $country = ip_info("Visitor", "Country Code"); // IN
 
-if ( strcasecmp( $country, 'BR' ) == 0 ){
+if (strcasecmp( $country, 'BR' ) == 0 ){
   header("Location: http://creativeapps.com.br/BR/index.html");
 }
 else {
